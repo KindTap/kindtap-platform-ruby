@@ -1,4 +1,4 @@
-DEBUG = true
+DEBUG = false
 
 module KindTapPlatform
   class << self
@@ -62,17 +62,6 @@ module KindTapPlatform
     end
 
     def generate_signature_v1(service, secret, method, uri, date, headers, body, params)
-      #debug({
-      #  "service" => service,
-      #  "secret" => secret,
-      #  "method" => method,
-      #  "uri" => uri,
-      #  "date" => date,
-      #  "headers" => headers,
-      #  "body" => body,
-      #  "params" => params,
-      #})
-
       canon_headers = build_canon_headers(headers)
       debug({ "canon_headers" => canon_headers })
       canon_query = build_canon_query(params)
