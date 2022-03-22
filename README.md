@@ -4,9 +4,11 @@
 
 ### Installation
 
-* Add the following to your Gemfile
+* If using Bundler, add the following to your Gemfile
+`gem 'kindtap-platform-ruby', '0.1.0'`
 
-`gem 'kindtap-platform-ruby', git: 'https://github.com/KindTap/kindtap-platform-ruby.git', tag: '0.1.0'`
+* Otherwise
+`gem install kindtap-platform-ruby -v 0.1.0`
 
 ### Example using Faraday
 
