@@ -1,6 +1,6 @@
-DEBUG = false
-
 module KindTapPlatform
+  DEBUG = false
+
   class << self
     ALGO_PRE = "KT1"
     ALGO = "#{ALGO_PRE}-HMAC-SHA256"
@@ -56,7 +56,7 @@ module KindTapPlatform
     end
 
     def debug(*args)
-      if DEBUG
+      if KindTapPlatform::DEBUG
         puts args
       end
     end
